@@ -1,6 +1,6 @@
 {
   "name": "artillery-plugin-sns",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A plugin for artillery.io that published response data to an SNS topic.  See https://github.com/shoreditch-ops/artillery.  Also see http://docs.aws.amazon.com/sns/latest/dg/welcome.html",
   "main": "index.js",
   "scripts": {
