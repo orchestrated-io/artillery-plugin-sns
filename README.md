@@ -15,7 +15,8 @@ To use:
         "plugins": {
           "sns": {
               "topicArn": "[INSERT_TOPIC_ARN]",
-              "subject": "[INSERT_SUBJECT]"
+              "subject": "[INSERT_SUBJECT]",
+              "compressMessage": [true|false]
           }
         }
       }
@@ -24,7 +25,10 @@ To use:
 
 4. `artillery run hello.json`
 
-This will cause every latency to be published to the given SNS topic
+This will cause every latency to be published to the given SNS topic.
+
+When `truthy`, the `compressMessage` option causes the message to be base64 encoded zlib deflated. This reduces the likelihood of
+hitting then 256K SNS message size limit.
 
 This plugin assumes that the `aws-sdk` has been pre-configured, before it is loaded, with credentials and any other
 setting that may be required to successfully `Publish` to the SNS topic.  This activity
