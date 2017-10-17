@@ -1,5 +1,5 @@
 # artillery-plugin-sns
-A plugin for artillery.io that published response data to an SNS topic.
+A plugin for artillery.io that publishes response data to an SNS topic.
 
 Based on [artillery-plugin-cloudwatch](https://github.com/Nordstrom/artillery-plugin-cloudwatch)
 
