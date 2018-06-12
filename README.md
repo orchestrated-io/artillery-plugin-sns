@@ -7,7 +7,7 @@ To use:
 
 1. `npm install -g artillery`
 2. `npm install artillery-plugin-sns` (add `-g` if you like)
-3. Add `cloudwatch` plugin config to your "`hello.json`" Artillery script
+3. Add `sns` plugin config to your "`hello.json`" Artillery script
 
     ```json
     {
